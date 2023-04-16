@@ -2,6 +2,10 @@
 - Install recommended extension
 - In terminal : npm run dev
 
+## Structure
+New page will be in /pages
+the filename in /pages will be the url
+
 ## AI Prompt
 Next MUI TS Code Only.
 Component with ...
@@ -15,4 +19,4 @@ Nextjs MUI TS Code Only. Component with an input and a next button
 
 [Next Mui from Mui](https://javascript.plainenglish.io/add-material-ui-to-your-next-js-typescript-project-75b67fd9d9b0)
 
-[MUI Webite](https://mui.com/)
+[MUI Website](https://mui.com/)
