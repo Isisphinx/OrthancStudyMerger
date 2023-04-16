@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 
 const InputWithNextButton = () => {
   const [inputValue, setInputValue] = useState('');
@@ -22,17 +23,33 @@ const InputWithNextButton = () => {
         justifyContent: 'center',
         alignItems: 'center',
         gap: 2,
+        height: '100vh',
+        width: '100%',
+        position: 'absolute',
+        top: 0,
+        left: 0,
       }}
     >
-      <TextField
-        label="Input"
-        value={inputValue}
-        onChange={handleInputChange}
-        variant="outlined"
-      />
-      <Button variant="contained" color="primary" onClick={handleNextButtonClick}>
-        Next
-      </Button>
+      <Paper
+        elevation={3}
+        sx={{
+          padding: 2,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 2,
+          alignItems: 'center',
+        }}
+      >
+        <TextField
+          label="Input"
+          value={inputValue}
+          onChange={handleInputChange}
+          variant="outlined"
+        />
+        <Button variant="contained" color="primary" onClick={handleNextButtonClick}>
+          Next
+        </Button>
+      </Paper>
     </Box>
   );
 };
