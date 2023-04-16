@@ -7,7 +7,7 @@ import Paper from '@mui/material/Paper';
 const InputWithNextButton = () => {
   const [inputValue, setInputValue] = useState('');
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
 
