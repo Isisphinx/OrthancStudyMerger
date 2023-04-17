@@ -1,3 +1,6 @@
+## Objectives
+Check the analysis folder for the project's objectives
+
 ## Start
 - Install recommended extension
 - In terminal : npm run dev
