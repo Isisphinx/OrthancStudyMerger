@@ -1,4 +1,4 @@
-// HorizontalStepper.js
+// pages/index.tsx
 import React, { useState } from "react";
 import {
   Box,
@@ -26,7 +26,20 @@ const steps = [
 const HorizontalStepper = () => {
   const [activeStep, setActiveStep] = useState(0);
 
+  type StepActions = {
+    [key in typeof steps[number]["label"]]: () => void;
+  };
+
   const handleNext = () => {
+    const actions: StepActions = {
+      "Source": () => console.log("Source step next action"),
+      "Target": () => console.log("Target step next action"),
+      "Merge": () => console.log("Merge step next action"),
+      "Result": () => console.log("Result step next action"),
+    };
+
+    const stepName = steps[activeStep].label;
+    actions[stepName]();
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 

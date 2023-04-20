@@ -13,6 +13,8 @@ the filename in /pages will be the url
 Next MUI TS Code Only.
 Component with ...
 
+ctrl + shift + p -> project tree. Generate the project tree in the README.md file
+
 ### Examples
 #### source.tsx
 Nextjs MUI TS Code Only. Component with an input and a next button
@@ -23,3 +25,43 @@ Nextjs MUI TS Code Only. Component with an input and a next button
 [Next Mui from Mui](https://javascript.plainenglish.io/add-material-ui-to-your-next-js-typescript-project-75b67fd9d9b0)
 
 [MUI Website](https://mui.com/)
+
+```
+OrthancStudyMerger
+├─ .eslintrc.json
+├─ .vscode
+│  ├─ extensions.json
+│  └─ settings.json
+├─ AIPrompt
+│  └─ prompt
+├─ README.md
+├─ analysis
+│  └─ analysis.md
+├─ components
+│  └─ steps
+│     └─ Steps.tsx
+├─ lowdb.d.ts
+├─ next-env.d.ts
+├─ next.config.js
+├─ package-lock.json
+├─ package.json
+├─ pages
+│  ├─ _app.tsx
+│  ├─ _document.tsx
+│  ├─ api
+│  │  └─ hello.ts
+│  └─ index.tsx
+├─ public
+│  ├─ favicon.ico
+│  └─ vercel.svg
+├─ styles
+│  ├─ Home.module.css
+│  ├─ globals.css
+│  └─ theme
+│     └─ lightThemeOptions.ts
+├─ tsconfig.json
+├─ types
+└─ utility
+   └─ createEmotionCache.ts
+
+```
